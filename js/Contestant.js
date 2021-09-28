@@ -9,7 +9,6 @@ class Contestant {
     var contestantCountRef = database.ref('contestantCount');
     contestantCountRef.on("value",(data)=>{
       contestantCount = data.val();
-      
     })
   }
 
@@ -19,7 +18,7 @@ class Contestant {
     });
   }
 
- update(){
+  update(){
     var contestantIndex = "contestants/contestant" + this.index;
     database.ref(contestantIndex).set({
       name:this.name,

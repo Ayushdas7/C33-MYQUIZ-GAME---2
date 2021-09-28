@@ -27,21 +27,20 @@ class Quiz {
   }
 
   play(){
-    background("green");
-    fill(0);
+    question.hide();
+    background("Yellow");
+     /*fill(0);
     textSize(30);
-    
+    text("Result of the Quiz",340, 50);
+    text("----------------------------",320, 65);
     Contestant.getPlayerInfo();
     if(allContestants !== undefined){
       debugger;
       var display_Answers = 230;
-      question.hide();{
-    text.display("Result of the Quiz",340, 50);
-    text("----------------------------",320, 65);
       fill("Blue");
       textSize(20);
       text("*NOTE: Contestant who answered correct are highlighted in green color!",130,230);
-      }
+
       for(var plr in allContestants){
         debugger;
         var correctAns = "2";
@@ -54,6 +53,6 @@ class Quiz {
         textSize(20);
         text(allContestants[plr].name + ": " + allContestants[plr].answer, 250,display_Answers)
       }
-    } 
+    } */
   }
 }

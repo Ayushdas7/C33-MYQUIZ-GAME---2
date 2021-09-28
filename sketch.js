@@ -15,17 +15,18 @@ function setup(){
   quiz = new Quiz();
   quiz.getState();
   quiz.start();
+
 }
 
 
 function draw(){
-  background("green");
+  background("pink");
   if(contestantCount === 2){
     quiz.update(1);
   }
   if(gameState === 1){
     clear();
 //call the play function
-quiz.play();
+    quiz.play();
   }
 }
